@@ -1,4 +1,4 @@
-require('dotenv').config();
+ require('dotenv').config();
 
 const express=require("express");
 const app=express();
@@ -9,7 +9,7 @@ const ejsMate=require("ejs-mate");
 const session=require("express-session");
 const flash=require("connect-flash");
 const campgroundRouter=require("./router/campgroundRouter.js");
-const ErrorvvvHandler=require("./errorHandler/error.js");
+const ErrorHandler=require("./errorHandler/error.js");
 const userRouter= require("./router/userRouter.js");
 const user= require("./model/user.js");
 const passport=require("passport");
