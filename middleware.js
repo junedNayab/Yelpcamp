@@ -37,7 +37,7 @@ module.exports.isFirstReview= asyncWrapper(async(req, res, next)=>{
             select: "_id"
         }
     })
-    const length=camp.raeviewsArray.length;
+    const length=camp.reviewsArray.length;
     for(let i=0;i<length;i++){
         if(camp.reviewsArray[i].owner._id.equals(req.user._id)){
             req.flash("error", "You already review this Campground, want to create another then delete the one you created for this campground");
